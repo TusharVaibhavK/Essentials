@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Stars Vertically</title>
+    <style>
+        .stars {
+            font-family: monospace;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="starsContainer"></div>
+    
+    <script>
+        // JavaScript to print stars
+        const starsContainer = document.getElementById("starsContainer");
+        const numStars = 5; // Number of stars to display
+        let stars = "";
+        
+        for (let i = 0; i < numStars; i++) {
+            stars += "∆\n"; // for horizontal remove \n
+        }
+        
+        starsContainer.textContent = stars;
+    </script>
+</body>
+</html>
