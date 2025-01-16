@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="valid.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional_methods.min.js"></script>
+  </head>
+  <body>
+    <script src="valid.js"></script>
+    <form id="Signupform" method="get" action="anim.html" autocomplete="off">
+      <fieldset>
+        <p>
+          <input id="firstname" name="firstname" type="text" />
+        </p>
+        <p>
+          <label for="lastname" name="lastname" type="text" />
+        </p>
+        <p>
+          <label for="username" name="username" type="text" />
+        </p>
+        <p>
+          <label for="password"> Password </label>
+          <input id="password" name="password" type="password" />
+        </p>
+        <p>
+          <label for="confirm_password"> Confirm Password </label>
+          <input
+            id="confirm_password"
+            name="confirm_password"
+            type="password"
+          />
+        </p>
+        <p>
+          <label for="email"> email </label>
+          <input id="email" name="email" type="email" />
+        </p>
+        <p>
+          <label for="agree"> Please agree to our policy </label>
+          <input id="agree" name=" agree" type="checkbox" />
+        </p>
+        <p>
+          <input class="submit" type="submit" value="submit" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
